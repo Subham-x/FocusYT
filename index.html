@@ -56,8 +56,8 @@
             border: none;
             cursor: pointer;
             margin-right: 16px;
-            width: 35px;
-            height: 35px;
+            width: 30px;
+            height: 30px;
             font-weight: 700;
             display: none;
             /* Hide by default for larger screens */
@@ -186,6 +186,18 @@
             font-size: small;
         }
 
+        #logoText {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #logoText img {
+            margin-right: 10px;
+
+        }
 
         @media (max-width: 768px) {
             .logo {
@@ -194,11 +206,15 @@
                 word-wrap: break-word;
                 /* border: 1px dotted black; */
                 margin-right: 4px;
+
+            }
+
+            .logo span {
+                display: none;
             }
 
             #icon {
-                /* display: none; */
-                width: 20px;
+                width: 30px;
             }
 
             .search-container {
@@ -212,18 +228,15 @@
             }
 
             .search-button {
-                width: 40px;
-                font-size: small;
+                width: 50px;
+                /* font-size: ; */
 
             }
 
             .menu-button {
                 padding: 1px;
                 /* border: 1px dotted black; */
-                width: 25px;
-                height: 25px;
-                font-weight: 500;
-                margin-right: 4px;
+                margin-right: 5px;
 
             }
 
@@ -256,7 +269,8 @@
         <button class="menu-button" id="menuButton">
             ☰
         </button>
-        <a href="#" class="logo"><img src="img/icon_144px.png" id="icon" alt="">SeachTube</a>
+        <a href="index.html" class="logo"><img src="img/icon_144px.png" title="SearchTube is also FocusYT." id="icon"
+                alt=""> <span>FocusYT</span> </a>
         <!-- Search Form with YouTube Search -->
         <div class="search-container">
             <form class="search-form" method="GET" action="https://www.youtube.com/results">
@@ -288,15 +302,38 @@
         <a href="https://support.google.com/youtube/" class="sidebar-item" target="_self">
             ❓ <span>Help</span>
         </a>
+
+        <hr>
+        <a href="https://github.com/Subham-x/FocusYT/blob/main/README.md" class="sidebar-item" target="_blank">
+            ℹ️ <span>About this site</span>
+        </a>
+        <a href="https://github.com/Subham-x/FocusYT" class="sidebar-item" target="_blank">
+            🔗 <span>GitHub Page </span>
+        </a>
+
     </nav>
 
     <main class="main-content" id="mainContent">
     </main>
 
+
+    <style>
+
+
+    </style>
+
+
+    <div id="centerBox">
+        <div id="logoText" title="FocusYT is also SearchTube. FocusYT is FocusYouTube">
+            <img src="img/icon_144px.png" width="40px" alt="🔍">
+            <span>FocusYT</span>
+        </div>
+    </div>
+
     <div id="centerBox">
         <div id="infoText">
-            <h3>Try searching to get started </h3>
-            <p>Start watching videos to help us build a feed of videos you'll love.</p>
+            <h3>Try searching without distracting</h3>
+            <p>No suggestive feed will appear here. If you want to appear feed go to YouTube's offical site.</p>
         </div>
     </div>
 
