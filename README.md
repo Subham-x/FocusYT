@@ -1,10 +1,10 @@
 
 
-# **YouTubeDistractionFree**[🔗](link)
+# **YouTubeDistractionFree**[🔗](https://github.com/Subham-x/YouTube_DistractionFree)
 🎯 [SearchTube🔗](link) is a clean, minimalist YouTube homepage to help you stay focused during search by removing distracting video suggestions.
 
 > **How to Use it?**
-1. First go to [Search Youtube website](link) (YouTube Distraction Free Homepage) and then do as follows: 
+1. First go to [Search Youtube website]([link](https://subham-x.github.io/YouTube_DistractionFree/)) (YouTube Distraction Free Homepage) and then do as follows: 
    - ⬇️ "Install site as app" (**PWA**: Progressive web app)
    - ⭐**Bookmark** this site.
    - 📌 **Pin to home page** of web browser.
@@ -42,7 +42,7 @@ Got it! Based on your updated instructions, here’s how the **Installation** se
 To install **YouTubeDistractionFree** website 🌐 as a Progressive Web App (PWA) and enjoy a distraction-free YouTube experience:
 
 1. **Go to the website**:  
-   Visit the [SearchTube Online website](#) in your browser.
+   Visit the [SearchTube Online website](https://subham-x.github.io/YouTube_DistractionFree/) in your browser.
 
 2. **Install as App**:  
    - On **Chrome** or **Edge**: Click on the **"Install"** button in the browser’s address bar (usually a "+" icon or "Install" button).  
@@ -57,11 +57,11 @@ To install **YouTubeDistractionFree** website 🌐 as a Progressive Web App (PWA
 ---
 
 ## 💡 **Creator & Credits** 
-- **Creator**: Subham Kumar Sathua
+- **Creator**: [Subham Kumar Sathua](https://github.com/Subham-x)
 - **Inspired by**: The need for a focused YouTube experience.
-- **Live Website**: [Open and install PWA website](link)
-- **GitHub Repo**: [YouTubeDistractionFree](link)
-- **Twitter**: [@YourHandle](link)
+- **Live Website**: [Open and install PWA website]([link](https://subham-x.github.io/YouTube_DistractionFree/))
+- **GitHub Repo**: [YouTubeDistractionFree]([link](https://github.com/Subham-x/YouTube_DistractionFree))
+
 - **Credits**: Thanks to everyone contributing to the open-source community for their constant inspiration!
 
 ---
