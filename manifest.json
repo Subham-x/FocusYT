@@ -1,6 +1,6 @@
 {
-    "name": "SearchTube",
-    "short_name": "SearchTube",
+    "name": "FocusYT",
+    "short_name": "FocusYT",
     "description": "A simplified YouTube-like interface without distraction.",
     "start_url": "/",
     "display": "standalone",
