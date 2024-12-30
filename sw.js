@@ -1,10 +1,12 @@
 const CACHE_NAME = "searchTube-PWAcache-v1";
 const urlsToCache = [
-  "/",
-  "/index.html",
-  "/manifest.json",
-  "/img/icon_144px.png", // Icon paths
-  "/img/icon_512px.png"  // Icon paths
+  "/FocusYT/",
+  "/FocusYT/index.html",
+  "/FocusYT/manifest.json",
+  "/FocusYT/styles.css", // Add any other assets like styles or scripts
+  "/FocusYT/app.js", // Main app JS file
+  "/FocusYT/icons/icon-192x192.png", // Icon paths
+  "/FocusYT/icons/icon-512x512.png"  // Icon paths
 ];
 
 // Install service worker
