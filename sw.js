@@ -2,7 +2,9 @@ const CACHE_NAME = "searchTube-PWAcache-v1";
 const urlsToCache = [
   "/",
   "/index.html",
-  "/manifest.json"
+  "/manifest.json",
+  "/img/icon_144px.png", // Icon paths
+  "/img/icon_512px.png"  // Icon paths
 ];
 
 // Install service worker
@@ -14,7 +16,7 @@ self.addEventListener("install", (event) => {
   );
 });
 
-// Fetch resources
+// Fetch resources from cache or network
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
@@ -23,7 +25,7 @@ self.addEventListener("fetch", (event) => {
   );
 });
 
-// Update service worker
+// Activate service worker and update caches
 self.addEventListener("activate", (event) => {
   const cacheWhitelist = [CACHE_NAME];
   event.waitUntil(
