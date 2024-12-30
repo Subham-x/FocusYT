@@ -1,7 +1,7 @@
 
 
-# **YouTubeDistractionFree**[🔗](https://github.com/Subham-x/YouTube_DistractionFree)
-🎯 [SearchTube🔗](link) is a clean, minimalist YouTube homepage to help you stay focused during search by removing distracting video suggestions.
+# **YouTubeDistractionFree**[🔗](https://github.com/Subham-x/FocusYT)
+🎯 [SearchTube🔗](https://subham-x.github.io/FocusYT/) is a clean, minimalist YouTube homepage to help you stay focused during search by removing distracting video suggestions.
 
 > **How to Use it?**
 1. First go to [Search Youtube website]([link](https://subham-x.github.io/YouTube_DistractionFree/)) (YouTube Distraction Free Homepage) and then do as follows: 
@@ -19,7 +19,7 @@
 ---
 
 ## 🌟 **Demo**  
-> **Experience it live**: [View Demo](#)
+> **Experience it live**: [View Demo](https://subham-x.github.io/YouTube_DistractionFree/)
 
 ![Distraction-Free YouTube Screenshot](./img/Demo%20Screenshot.png)  
 
@@ -59,8 +59,8 @@ To install **YouTubeDistractionFree** website 🌐 as a Progressive Web App (PWA
 ## 💡 **Creator & Credits** 
 - **Creator**: [Subham Kumar Sathua](https://github.com/Subham-x)
 - **Inspired by**: The need for a focused YouTube experience.
-- **Live Website**: [Open and install PWA website]([link](https://subham-x.github.io/YouTube_DistractionFree/))
-- **GitHub Repo**: [YouTubeDistractionFree]([link](https://github.com/Subham-x/YouTube_DistractionFree))
+- **Live Website**: [Open and install PWA website]([link](https://subham-x.github.io/YouTube_DistractionFree/)
+- **GitHub Repo**: [YouTubeDistractionFree]([link](https://github.com/Subham-x/FocusYT)
 
 - **Credits**: Thanks to everyone contributing to the open-source community for their constant inspiration!
 
