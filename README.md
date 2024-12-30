@@ -59,8 +59,8 @@ To install **YouTubeDistractionFree** website 🌐 as a Progressive Web App (PWA
 ## 💡 **Creator & Credits** 
 - **Creator**: [Subham Kumar Sathua](https://github.com/Subham-x)
 - **Inspired by**: The need for a focused YouTube experience.
-- **Live Website**: [Open and install PWA website]([link](https://subham-x.github.io/FocusYT/)
-- **GitHub Repo**: [YouTubeDistractionFree]([link](https://github.com/Subham-x/FocusYT)
+- **Live Website**: [Open and install PWA website](https://subham-x.github.io/FocusYT/)
+- **GitHub Repo**: [YouTubeDistractionFree](https://github.com/Subham-x/FocusYT)
 
 - **Credits**: Thanks to everyone contributing to the open-source community for their constant inspiration!
 
