@@ -4,7 +4,7 @@
 🎯 [SearchTube🔗](https://subham-x.github.io/FocusYT/) is a clean, minimalist YouTube homepage to help you stay focused during search by removing distracting video suggestions.
 
 > **How to Use it?**
-1. First go to [Search Youtube website]([link](https://subham-x.github.io/YouTube_DistractionFree/)) (YouTube Distraction Free Homepage) and then do as follows: 
+1. First go to [Search Youtube website]([link](https://subham-x.github.io/FocusYT/) (YouTube Distraction Free Homepage) and then do as follows: 
    - ⬇️ "Install site as app" (**PWA**: Progressive web app)
    - ⭐**Bookmark** this site.
    - 📌 **Pin to home page** of web browser.
@@ -19,9 +19,9 @@
 ---
 
 ## 🌟 **Demo**  
-> **Experience it live**: [View Demo](https://subham-x.github.io/YouTube_DistractionFree/)
+> **Experience it live**: [View Demo](https://subham-x.github.io/FocusYT/)
 
-![Distraction-Free YouTube Screenshot](./img/Demo%20Screenshot.png)  
+<img src="img/Demo%20Screenshot.png" width="500" />
 
 ---
 
@@ -42,7 +42,7 @@ Got it! Based on your updated instructions, here’s how the **Installation** se
 To install **YouTubeDistractionFree** website 🌐 as a Progressive Web App (PWA) and enjoy a distraction-free YouTube experience:
 
 1. **Go to the website**:  
-   Visit the [SearchTube Online website](https://subham-x.github.io/YouTube_DistractionFree/) in your browser.
+   Visit the [SearchTube Online website](https://subham-x.github.io/FocusYT/) in your browser.
 
 2. **Install as App**:  
    - On **Chrome** or **Edge**: Click on the **"Install"** button in the browser’s address bar (usually a "+" icon or "Install" button).  
@@ -59,7 +59,7 @@ To install **YouTubeDistractionFree** website 🌐 as a Progressive Web App (PWA
 ## 💡 **Creator & Credits** 
 - **Creator**: [Subham Kumar Sathua](https://github.com/Subham-x)
 - **Inspired by**: The need for a focused YouTube experience.
-- **Live Website**: [Open and install PWA website]([link](https://subham-x.github.io/YouTube_DistractionFree/)
+- **Live Website**: [Open and install PWA website]([link](https://subham-x.github.io/FocusYT/)
 - **GitHub Repo**: [YouTubeDistractionFree]([link](https://github.com/Subham-x/FocusYT)
 
 - **Credits**: Thanks to everyone contributing to the open-source community for their constant inspiration!
@@ -101,8 +101,10 @@ The author is **not responsible** for:
 ---
 
 ## 📞 **Contact**  
-💌 Have questions or feedback? Reach out!  
-- 📧 Email: [youremail@example.com](mailto:youremail@example.com)  
-- 🐦 Twitter: [@YourHandle](https://twitter.com/YourHandle)  
+💌 Have questions or feedback? Reach out!
+- 📧 Email Main: [subhamsathua@outlook.com](mailto:subhamsathua@outlook.com)  
+- 📧 Email: [subhamsathua@protonmail.com](mailto:subhamsathua@protonmail.com)
+- 🐦 Twitter: [@Subham_Sathua](https://x.com/Subham_Sathua)
+- 👉 🔗 LinkedIn: [@subhamsathua](https://www.linkedin.com/in/subhamsathua/)
 
 ---
