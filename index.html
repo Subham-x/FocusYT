@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchTube</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <meta name="description" content="YouTube homescreen without distractions on SearchTube.">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("/sw.js").then(
+                    (registration) => {
+                        console.log("ServiceWorker registered: ", registration);
+                    },
+                    (error) => {
+                        console.log("ServiceWorker registration failed: ", error);
+                    }
+                );
+            });
+        }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            height: 100vh;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 56px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        .menu-button {
+            padding: 8px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin-right: 16px;
+            width: 35px;
+            height: 35px;
+            font-weight: 700;
+            display: none;
+            /* Hide by default for larger screens */
+        }
+
+        .menu-button:hover {
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            border: 1px solid #c2c2c2;
+
+        }
+
+        #icon {
+            width: 30px;
+            /* border: 1px dotted black; */
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+            margin-right: 15px;
+            /* border: 1px dotted black; */
+            text-align: center;
+
+
+        }
+
+        .search-container {
+            flex: 1;
+            max-width: 640px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-form {
+            display: flex;
+            height: 40px;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 0 16px;
+            border: 1px solid #ccc;
+            border-radius: 20px 0 0 20px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-input:focus {
+            border-color: #1a73e8;
+        }
+
+        .search-button {
+            width: 64px;
+            border: 1px solid #ccc;
+            border-left: none;
+            border-radius: 0 20px 20px 0;
+            background-color: #f8f8f8;
+            cursor: pointer;
+        }
+
+        .search-button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 56px;
+            bottom: 0;
+            width: 240px;
+            background-color: white;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 24px;
+            color: #333;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .sidebar-item:hover {
+            background-color: #f0f0f0;
+        }
+
+        .sidebar-item span {
+            margin-left: 24px;
+        }
+
+        .main-content {
+            margin-top: 72px;
+            padding: 24px;
+            margin-left: 240px;
+            /* Default margin for larger screens */
+            transition: margin-left 0.3s ease;
+        }
+
+        #centerBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+        }
+
+        #infoText {
+            text-align: center;
+            border: 1px solid #b5b5b5;
+            border-radius: 12px;
+            background-color: #f0f0f0;
+            width: fit-content;
+            padding: 15px;
+            margin: 20px;
+        }
+
+        #infoText p {
+            font-size: small;
+        }
+
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 12px;
+                white-space: normal;
+                word-wrap: break-word;
+                /* border: 1px dotted black; */
+                margin-right: 4px;
+            }
+
+            #icon {
+                /* display: none; */
+                width: 20px;
+            }
+
+            .search-container {
+                flex-basis: 15px;
+            }
+
+            .search-input {
+                width: 10px;
+                font-size: small;
+
+            }
+
+            .search-button {
+                width: 40px;
+                font-size: small;
+
+            }
+
+            .menu-button {
+                padding: 1px;
+                /* border: 1px dotted black; */
+                width: 25px;
+                height: 25px;
+                font-weight: 500;
+                margin-right: 4px;
+
+            }
+
+            .menu-button {
+                display: block;
+                /* Show menu button on smaller screens */
+            }
+
+            .sidebar {
+                transform: translateX(-240px);
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .main-content.shifted {
+                margin-left: 240px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <button class="menu-button" id="menuButton">
+            ☰
+        </button>
+        <a href="#" class="logo"><img src="img/icon_144px.png" id="icon" alt="">SeachTube</a>
+        <!-- Search Form with YouTube Search -->
+        <div class="search-container">
+            <form class="search-form" method="GET" action="https://www.youtube.com/results">
+                <input type="text" name="search_query" class="search-input" placeholder="Search YouTube">
+                <button type="submit" class="search-button">🔍</button>
+            </form>
+        </div>
+    </header>
+
+    <nav class="sidebar" id="sidebar">
+        <a href="https://www.youtube.com/" class="sidebar-item" target="">
+            🏠 <span>Home</span>
+        </a>
+        <a href="https://www.youtube.com/feed/explore" class="sidebar-item" target="_self">
+            🧭 <span>Explore</span>
+        </a>
+        <a href="https://www.youtube.com/feed/library" class="sidebar-item" target="_self">
+            📚 <span>Library</span>
+        </a>
+        <a href="https://www.youtube.com/feed/history" class="sidebar-item" target="_self">
+            📜 <span>History</span>
+        </a>
+        <a href="https://www.youtube.com/playlist?list=LL" class="sidebar-item" target="_self">
+            👍 <span>Liked Videos</span>
+        </a>
+        <a href="https://www.youtube.com/account" class="sidebar-item" target="_self">
+            ⚙️ <span>Settings</span>
+        </a>
+        <a href="https://support.google.com/youtube/" class="sidebar-item" target="_self">
+            ❓ <span>Help</span>
+        </a>
+    </nav>
+
+    <main class="main-content" id="mainContent">
+    </main>
+
+    <div id="centerBox">
+        <div id="infoText">
+            <h3>Try searching to get started </h3>
+            <p>Start watching videos to help us build a feed of videos you'll love.</p>
+        </div>
+    </div>
+
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const sidebar = document.getElementById('sidebar');
+        const mainContent = document.getElementById('mainContent');
+
+        // Toggle sidebar on smaller screens
+        menuButton.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+        });
+
+        // Close sidebar when clicking outside on smaller screens
+        document.addEventListener('click', (e) => {
+            if (!sidebar.contains(e.target) &&
+                !menuButton.contains(e.target) &&
+                sidebar.classList.contains('open')) {
+                sidebar.classList.remove('open');
+            }
+        });
+    </script>
+</body>
+
+</html>
