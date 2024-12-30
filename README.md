@@ -4,7 +4,7 @@
 🎯 [SearchTube🔗](https://subham-x.github.io/FocusYT/) is a clean, minimalist YouTube homepage to help you stay focused during search by removing distracting video suggestions.
 
 > **How to Use it?**
-1. First go to [Search Youtube website]([link](https://subham-x.github.io/FocusYT/) (YouTube Distraction Free Homepage) and then do as follows: 
+1. First go to [Search Youtube website](https://subham-x.github.io/FocusYT/) (YouTube Distraction Free Homepage) and then do as follows: 
    - ⬇️ "Install site as app" (**PWA**: Progressive web app)
    - ⭐**Bookmark** this site.
    - 📌 **Pin to home page** of web browser.
