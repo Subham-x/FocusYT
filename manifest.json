@@ -1,27 +1,26 @@
 {
-    "name": "FocusYT",
-    "short_name": "FocusYT",
-    "description": "A simplified YouTube-like interface without distraction.",
-    "start_url": "/",
-    "display": "standalone",
-    "background_color": "#f9f9f9",
-    "theme_color": "#ffffff",
-    "icons": [
-      {
-        "src": "icon.png",
-        "sizes": "48x48",
-        "type": "image/png"
-      },
-      {
-        "src": "img/icon_144px.png",
-        "sizes": "144x144",
-        "type": "image/png"
-      },
-      {
-        "src": "img/icon_512px.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      }
-    ]
-  }
-  
+  "name": "FocusYT",
+  "short_name": "FocusYT",
+  "description": "A simplified YouTube-like interface without distraction.",
+  "start_url": "/FocusYT/",  // Adjust the start URL to reflect the subfolder
+  "display": "standalone",
+  "background_color": "#f9f9f9",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/FocusYT/icon.png",  // Ensure icon path includes subfolder
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/FocusYT/img/icon_144px.png",  // Ensure icon path includes subfolder
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/FocusYT/img/icon_512px.png",  // Ensure icon path includes subfolder
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
